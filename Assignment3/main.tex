@@ -1,0 +1,215 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{tikz}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{multicol}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2011\\XE : Engineering Sciences}
+\author{AI24BTECH11022 - Pabbuleti Venkata Charan Teja}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+\begin{enumerate}
+\setcounter{enumi}{13}
+\item The integral $\oint_{c}\frac{z^{3}e^{z}}{\brak{z - 1}^{3}}dz$ the curve $C:\abs{z}=\frac{\pi}{2}$, oriented counter-clockwise, equals
+\begin{multicols}{2}
+\begin{enumerate}
+\item $0$
+\item $2\pi i$
+\item $13e\pi i$
+\item $20e\pi i$
+\end{enumerate}
+\end{multicols}
+
+
+\item Consider the function $f\brak{x,y,z}=x^{3}e^{y}\sin{z}$ and the point $P=\brak{1,0,\frac{\pi}{2}}$. The value of $f$ DOES NOT change due to a small displacement of P along the direction of
+\begin{multicols}{2}
+\begin{enumerate}
+\item $\sbrak{1,0,\frac{\pi}{2}}$
+\item $\sbrak{1,-1,1}$
+\item $\sbrak{1,-3,0}$
+\item $\sbrak{2,0,-1}$
+\end{enumerate}
+\end{multicols}
+
+
+\item A solution of the differential equation $\frac{d^{2}y}{dx^{2}}-5\frac{dy}{dx}+6y=36x$ is
+\begin{multicols}{2}
+\begin{enumerate}
+\item $e^{2x}+e^{3x}+6x+5$
+\item $e^{-3x}+6x+5$
+\item $e^{2x}+e^{-3x}+6x+\frac{5}{6}$
+\item $e^{2x}+e^{3x}+x+\frac{5}{6}$
+\end{enumerate}
+\end{multicols}
+
+\item For any positive numbers $a$ and $b$, the matrix $$P=\begin{bmatrix}
+1\\a\\b\\
+\end{bmatrix}
+\begin{bmatrix}
+4&5&6\\
+\end{bmatrix}$$ is
+\begin{multicols}{2}
+\begin{enumerate}
+\item orthogonal
+\item diagonalizable
+\item nonsingular
+\item of rank $2$
+\end{enumerate}
+\end{multicols}
+
+
+\item Suppose $x_{n}$ is the $n-th$ iterated value while finding the positive square root of $7$ by the Newton-Raphson method with a positive initial guess $x_{0}\brak{\neq \sqrt{7}}$. If $e_{n}=\sqrt{7}-x_{n}$ for $n\geq 1$, then
+\begin{multicols}{2}
+\begin{enumerate}
+\item $e_{n+1}=\frac{e_{n}}{2x_{n}^{2}}$
+\item $e_{n+1}=\frac{-\sqrt{7}e_{n}^{2}}{2x_{n}}$
+\item $e_{n+1}=\frac{e_{n}^{2}}{\sqrt{7}}$
+\item $e_{n+1}=\frac{-e_{n}^{2}}{2x_{n}}$
+\end{enumerate}
+\end{multicols}
+
+\item The solution of the initial boundary value problem partial $$\frac{\partial u}{\partial t}=\frac{\partial^{2}u}{\partial x^{2}},0<x<\pi,t>0,\text{with boundary and initial conditions}$$ $$\frac{\partial u}{\partial x}\brak{0,t}=0=u\brak{\pi,t},t>0\text{ and }u\brak{x,0}=f\brak{x},0<x<\pi\text{ is}$$
+\begin{enumerate}
+\item $u\brak{x,t}=\sum_{n=0}^{\infty}A_{n}exp\brak{-\brak{\frac{2n+1}{2}}^{2}t}\cos{\brak{\frac{2n+1}{2}x}}$, with $A_{n}=\frac{2}{\pi}\int_{0}^{\pi}f\brak{x}\cos{\brak{\frac{2n+1}{2}x}}dx$
+\item $u\brak{x,t}=\sum_{n=0}^{\infty}A_{n}exp\brak{-n^{2}t}\cos{\brak{nx}}$, with $A_{n}=\frac{2}{\pi}\int_{0}^{\pi}f\brak{x}\cos{\brak{nx}}dx$
+\item $u\brak{x,t}=\sum_{n=1}^{\infty}A_{n}exp\brak{-\brak{\frac{2n+1}{2}}^{2}t}\sin{\brak{\frac{2n+1}{2}x}}$, with $A_{n}=\frac{2}{\pi}\int_{0}^{\pi}f\brak{x}\sin{\brak{\frac{2n+1}{2}x}}dx$
+\item $u\brak{x,t}=\sum_{n=1}^{\infty}A_{n}exp\brak{-n^{2}t}\sin{\brak{nx}}$, with $A_{n}=\frac{2}{\pi}\int_{0}^{\pi}f\brak{x}\sin{\brak{nx}}dx$
+\end{enumerate}
+
+\item The function $f\brak{x}$ defined by $f(x)=
+\begin{cases} 
+3-x^{2},&x\leq1,\\ 
+3-x,&1<x\leq 2,\\ 
+x-1,&x>2. 
+\end{cases}
+$ has
+\begin{enumerate}
+\item a local maxima at $x=3$ and a local minima at $x=0$
+\item a local maxima at $x=0$ and no local minima
+\item a local maxima at $x=0$ and a local minima at $x=2$
+\item no local maxima and a local minima at $x=1$
+\end{enumerate}
+
+
+\item In a biased die experiment, the random variable $x$ of the outcome has the (cumulative) distribution function $F\brak{x}$ shown below.\\
+\begin{tikzpicture}
+\draw[->] (0,0) -- (7,0) node[right] {$x$};
+\draw[->] (0,0) -- (0,6) node[above] {$F(x)$};
+\node[left] at (0,5) {1};
+\node[left] at (0,4.5) {0.9};
+\node[left] at (0,3.5) {0.7};
+\node[left] at (0,2.5) {0.5};
+\node[left] at (0,1.5) {0.3};
+\node[left] at (0,0.5) {0.1};
+\foreach \x in {1,2,3,4,5,6}
+\node[below] at (\x,0) {\x};
+\draw (1,0) -- (1,0.5) -- (2,0.5) -- (2,1.5) -- (3,1.5) -- (3,2.5)-- (4,2.5) -- (4,3.5) -- (5,3.5) -- (5,4.5) -- (6,4.5) -- (6,5) -- (7,5);
+\end{tikzpicture}
+
+The variance of $x$ is
+\begin{multicols}{2}
+\begin{enumerate}
+\item $1.5$
+\item $2.25$
+\item $3.5$
+\item $4.25$
+\end{enumerate}
+\end{multicols}
+
+
+\item For a boundary layer on a flat plate \rule{1cm}{0.15mm} forces and \rule{1cm}{0.15mm} forces are of the same order of magnitude
+\begin{multicols}{2}
+\begin{enumerate}
+\item body, inertia
+\item viscous, body
+\item inertia, viscous
+\item viscous, pressure
+\end{enumerate}
+\end{multicols}
+
+
+\item The temperature field in a fluid flow is given by $(60-0.2xy)\degree C$. The velocity field is $\overrightarrow{V}=2xy\hat{i}+ty\hat{j}m/s$. The rate of change of the temperature measured by a thermometer moving along with the flow at $\brak{2,-4}m$ at $t=4s$ is
+\begin{multicols}{2}
+\begin{enumerate}
+\item $-12.8\degree C/s$
+\item $-10.6\degree C/s$
+\item $-6.4\degree C/s$
+\item $-4.8\degree C/s$
+\end{enumerate}
+\end{multicols}
+
+
+\item Two tanks $A$ and $B$, with the same height are filled with water till the top. The volume of tank $A$ is $10$ times the volume of tank $B$. What can you say about the pressures $p_{A}$ and $p_{B}$ at the bottom of the tanks $A$ and $B$ respectively?
+\begin{enumerate}
+\item $p_{A}=10p_{B}$
+\item $p_{B}=10p_{A}$
+\item $p_{A}=p_{B}$
+\item Additional data is required to compare the two pressures
+\end{enumerate}
+
+
+\item A velocity field in a plane flow is given by $\overrightarrow{V}=2xy\hat{i}+3y\hat{j}$. The vorticity at the point $\brak{2,4}m$ is
+\begin{multicols}{2}
+\begin{enumerate}
+\item $-4\hat{k}rad/s$
+\item $-3\hat{j}rad/s$
+\item $-2\hat{k}rad/s$
+\item $-3\hat{i}rad/s$
+\end{enumerate}
+\end{multicols}
+
+
+\item Separation is said to occur at a wall when \rule{1cm}{0.15mm} at the wall becomes zero.
+\begin{multicols}{2}
+\begin{enumerate}
+\item internal energy
+\item pressure
+\item shear stress
+\item density
+\end{enumerate}
+\end{multicols}
+\end{enumerate}
+\end{document}
