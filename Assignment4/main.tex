@@ -1,0 +1,185 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{tikz}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{multicol}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2014\\ME : Mechanical Engineering}
+\author{AI24BTECH11022 - Pabbuleti Venkata Charan Teja}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+\begin{enumerate}
+\setcounter{enumi}{26}
+\item Which one of the following is a CFC refrigerant?
+\begin{multicols}{2}
+\begin{enumerate}
+\item $R744$
+\item $R290$
+\item $R502$
+\item $R718$
+\end{enumerate}
+\end{multicols}
+
+
+\item The jobs arrive at a facility, for service, in a random manner. The probability distribution of number of arrivals of jobs in a fixed time interval is
+\begin{multicols}{2}
+\begin{enumerate}
+\item Normal
+\item Poisson
+\item Erlang
+\item Beta
+\end{enumerate}
+\end{multicols}
+
+
+\item In exponential smoothening method, which one of the following is true?
+\begin{enumerate}
+\item $0\leq\alpha\leq1$ and high value of $\alpha$ is used for stable demand
+\item $0\leq\alpha\leq1$ and high value of $\alpha$ is used for unstable demand
+\item $\alpha\geq 1$ and high value of $\alpha$ is used for stable demand
+\item $\alpha\leq 0$ and high value of $\alpha$ is used for unstable demand
+\end{enumerate}
+
+
+\item For machining a rectangular island represented by coordinates $P\brak{0,0}$, $Q\brak{100,0}$, $R\brak{100,50}$ and $S\brak{0,50}$ on a casting using CNC milling machine, an end mill with a diameter of $16mm$ is used. The trajectory of the cutter centre to machine the island $PQRS$ is
+\begin{enumerate}
+\item $\brak{-8,-8},\brak{108,-8},\brak{108,58},\brak{-8,58},\brak{-8,-8}$
+\item $\brak{8,8},\brak{94,8},\brak{94,44},\brak{8,44},\brak{8,8}$
+\item $\brak{-8,8},\brak{94,0},\brak{94,44},\brak{8,44},\brak{-8,8}$
+\item $\brak{0,0}\brak{100,0},\brak{100,50},\brak{50,0},\brak{0,0}$
+\end{enumerate}
+
+\item Which one of the following instruments is widely used to check and calibrate geometric features of machine tools during their assembly?
+\begin{enumerate}
+\item Ultrasonic probe
+\item Coordinate Measuring Machine (CMM)
+\item Laser interferometer
+\item Vernier calipers
+\end{enumerate}
+
+
+\item The major difficulty during welding of aluminium is due to its
+\begin{multicols}{2}
+\begin{enumerate}
+\item high tendency of oxidation
+\item high thermal conductivity
+\item low melting point
+\item low density
+\end{enumerate}
+\end{multicols}
+
+
+\item The main cutting force acting on a tool during the turning (orthogonal cutting) operation of a metal is $400N$. The turning was performed using $2mm$ depth of cut and $0.1mm/rev$ feed rate. The specific cutting pressure (in $N/mm^{2}$) is
+\begin{multicols}{2}
+\begin{enumerate}
+\item $1000$
+\item $2000$
+\item $3000$
+\item $4000$
+\end{enumerate}
+\end{multicols}
+
+
+\item The process of reheating the martensitic steel to reduce its brittleness without any significant loss in its hardness is
+\begin{multicols}{2}
+\begin{enumerate}
+\item normalising
+\item annealing
+\item quenching
+\item tempering
+\end{enumerate}
+\end{multicols}
+
+
+\item In solid-state welding, the contamination layers between the surfaces to be welded are removed by
+\begin{multicols}{2}
+\begin{enumerate}
+\item alcohol
+\item plastic deformation
+\item water jet
+\item sand blasting
+\end{enumerate}
+\end{multicols}
+
+
+\item The integral $\oint_{c}\brak{ydx-xdy}$ is evaluated along the circle $x^{2}+y^{2}=\frac{1}{4}$ traversed in counter clockwise direction. The integral is equal to
+\begin{multicols}{2}
+\begin{enumerate}
+\item $0$
+\item $-\frac{\pi}{4}$
+\item $-\frac{\pi}{2}$
+\item $\frac{\pi}{4}$
+\end{enumerate}
+\end{multicols}
+
+
+\item If $y=f\brak{x}$ is the solution $\frac{d^{2}y}{dx^{2}}=0$ with the boundary conditions $y=5$ at $x=0$, and $\frac{dy}{dx}=2$ at $x=10,f\brak{15}=$ \rule{1cm}{0.15mm}
+
+
+\item In the following table, $x$ is a discrete random variable and $p\brak{x}$ is the probability density. The standard deviation of $x$ is
+
+
+\begin{table}[h!]
+\renewcommand{\thetable}{1}
+    \centering
+   \input{tables/table.tex}
+   \def\tablename{Table}
+\end{table}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\item $0.18$
+\item $0.36$
+\item $0.54$
+\item $0.6$
+\end{enumerate}
+\end{multicols}
+
+
+\item Using the trapezoidal rule, and dividing the interval of integration into three equal subintervals, the definite integral $\int_{-1}^{+1}\abs{x}dx$ is \rule{1cm}{0.15mm}
+\end{enumerate}
+\end{document}
