@@ -1,0 +1,141 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{multicol}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{EE : Electrical Engineering}
+\author{AI24BTECH11022 - Pabbuleti Venkata Charan Teja}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+\begin{enumerate}
+\setcounter{enumi}{26}
+\item An inductor having a $Q-$Factor of $60$ is connected in series with a capacitor having a $Q-$factor of $240$. The overall $Q-$factor of the circuit is \rule{1cm}{0.15mm} (round off to nearest integer) \hfill(2022)
+
+
+\item The network shown below has a resonant frequency of $150kHz$ and a bandwidth of $600Hz$. The $Q-$factor of the network is \rule{1cm}{0.15mm} (round off to nearest integer) \hfill(2022)
+
+\input{figs/fig1}
+
+
+\item The maximum clock frequency in $MHz$ of a $4-$stage ripple counter, utilizing flip-flops, with each flip-flop having a propagation delay of $20ns$, is \rule{1cm}{0.15mm}. (round off to one decimal place) \hfill(2022)
+
+
+\item If only $5\%$ of the supplied power to a cable reaches the output terminal, the power loss in the cable, in $decibels$, is \rule{1cm}{0.15mm}. (round off to nearest integer) \hfill(2022)
+
+
+\item In the circuit shown below, the switch $S$ is closed at $t=0$. The magnitude of the steady state voltage, in $volts$, across the $6\ohm$ resistor is \rule{1cm}{0.15mm}. (round off to two decimal places) \hfill(2022)
+
+\input{figs/fig2}
+
+
+\item A single-phase full-bridge diode rectifier feeds a resistive load of $50\ohm$ from a $200V$, $50Hz$ single phase $AC$ supply. If the diodes are ideal, then the active power, in $watts$, drawn by the load is \rule{1cm}{0.15mm}. (round off to nearest integer) \hfill(2022)
+
+
+\item The voltage at the input of an AC-DC rectifier is given by $v\brak{t}=230\sqrt{2}sin{\omega t}$ where $\omega=2\pi\times 50rad/s$. The input current drawn by the rectifier is given by $$i\brak{t}=10\sin{\brak{\omega t-\frac{\pi}{3}}}+4\sin{\brak{3\omega t-\frac{\pi}{6}}}+3\sin{\brak{5\omega t-\frac{\pi}{3}}}$$ The input power factor, (rounded off to two decimal places), is, \rule{1cm}{0.15mm} lag. \hfill(2022)
+
+
+\item Two balanced three-phase loads, as shown in the figure, are connected to a $100\sqrt{3}V$, three-phase, $50Hz$ main supply Given $Z_{1}=(18+j24)\ohm$ and $Z_{2}=\brak{6+j8}\ohm$. The ammeter reading, in amperes, is \rule{1cm}{0.15mm}. (round off to nearest integer) \hfill(2022)
+
+\input{figs/fig3}
+
+
+\item The frequencies of the stator and rotor currents flowing in a three-phase $8-$pole induction motor are $40Hz$ and $1Hz$, respectively. The motor speed, in rpm, is \rule{1cm}{0.15mm}. (round off to nearest integer) \hfill(2022)
+
+
+\item The output impedance of a non-ideal operational amplifier is denoted by $Z_{out}$. The variation in the magnitude of $Z_{out}$ with increasing frequency, $f$, in the circuit shown below, is best represented by \hfill(2022)
+
+\input{figs/fig4}
+\begin{multicols}{2}
+\begin{enumerate}
+\item \input{figs/fig5}
+\item \input{figs/fig6}
+\item \input{figs/fig7}
+\item \input{figs/fig8}
+\end{enumerate}
+\end{multicols}
+
+
+\item An $LTI$ system is shown in the figure where $G\brak{s}=\frac{100}{s^{2}+0.1s+10}$. The steady state output of the system, to the input $r\brak{t}$, is given as $y\brak{t}=a+b\sin{\brak{10t+\theta}}$. The values of '$a$' and '$b$' will be \hfill(2022)
+
+\input{figs/fig9}
+\begin{multicols}{2}
+\begin{enumerate}
+\item $a=1$, $b=10$
+\item $a=10$, $b=1$
+\item $a=1$, $b=100$
+\item $a=100$, $b=1$
+\end{enumerate}
+\end{multicols}
+
+
+\item The open loop transfer function of a unity gain negative feedback system is given as $G\brak{s}=\frac{1}{s\brak{s+1}}$. The Nyquist contour in the $s-$plane encloses the entire right half plane and a small neighbourhood around the origin in the left half plane, as shown in the figure below. The number of encirclements of the point $\brak{-1+j0}$ by the Nyquist plot of $G\brak{s}$, corresponding to the Nyquist contour, is denoted as $N$. Then $N$ equals to \hfill(2022)
+
+\input{figs/fig10}
+\begin{multicols}{2}
+\begin{enumerate}
+\item $0$
+\item $1$
+\item $2$
+\item $3$
+\end{enumerate}
+\end{multicols}
+
+
+\item The damping ratio and undamped natural frequency of a closed loop system as shown in the figure, are denoted as $\zeta$ and $w_{n}$, respectively. The values of $\zeta$ and $w_{n}$ are \hfill(2022)
+
+\input{figs/fig11}
+\begin{multicols}{2}
+\begin{enumerate}
+\item $\zeta=0.5$ and $w_{n}=10rad/s$
+\item $\zeta=0.1$ and $w_{n}=10rad/s$
+\item $\zeta=0.707$ and $w_{n}=10rad/s$
+\item $\zeta=0.707$ and $w_{n}=100rad/s$
+\end{enumerate}
+\end{multicols}
+\end{enumerate}
+\end{document}

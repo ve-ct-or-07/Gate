@@ -1,0 +1,9 @@
+\begin{circuitikz}[scale=0.25]
+\draw node[left] {$B$} (0,0) -- (25,0) to [generic,l=$Z_{1}$] (25,20) to [generic,l=$Z_{2}$] (17.5,10) to [generic,l=$Z_{2}$] (25,0) to [generic,l=$Z_{1}$] (5,10) to [generic,l=$Z_{1}$] (25,20) -- (8.5,20);
+\draw (6.5,20) --  (0,20) node[left] {$R$};
+\draw (7.5,20) circle (1cm);
+\draw (17.5,10) to [generic,l=$Z_{2}$] (10,10) -- (0,10) node[left] {$Y$};
+\node at (7.5,20) {$A$};
+\filldraw (17.5,10) circle (0.5cm);
+\draw[<->] (2,10) -- (2,20) node[midway,left] {$100\sqrt{3}V$};
+\end{circuitikz}
